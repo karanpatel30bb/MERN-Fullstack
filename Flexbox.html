@@ -1,0 +1,38 @@
+ <!-- Steps to create flexbox layout:
+ 1. Create a container element and set its display property to flex.
+ 2. Use flex-direction to define the direction of the flex items (row or column).
+ 3. Apply justify-content to align items along the main axis (start, center, space-between, etc.).
+ 4. Use align-items to align items along the cross axis (stretch, center, baseline, etc.).
+ 5. Optionally, use flex-wrap to control whether items should wrap onto multiple lines. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            border: 2px solid #000;
+        }
+        .flex-item {
+            background-color: #f2a365;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 10px;
+
+
+        }
+    </style>
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+</body>
+</html>

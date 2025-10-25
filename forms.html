@@ -1,0 +1,28 @@
+<!--Login form with authentication and authorization features.
+ Step for implementing htmal form
+ Step 1; Create a simple html application.
+ step 2: Add form elements like input, select, textarea, button etc.
+ step 3: Add attributes like action, method, name, placeholder etc.
+ step 4: Test the form in browser.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="/submit_login" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <input type="submit" value="Login">
+</form>
+</body>
+</html>
