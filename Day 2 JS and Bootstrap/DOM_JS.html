@@ -1,0 +1,76 @@
+<!-- DOM in JS is programming interface for HTML and XML documents.
+ It represents the page so that programs can change the document
+  structure, style, and content.
+   The DOM represents the document as nodes and objects;
+ that way, programming languages can interact with the page. -->
+
+ <!-- Below html is represmted in a tree structure. -->
+<!-- Document
+└── html
+    ├── head
+    │   ├── meta        
+    │   ├── title
+    │   └── link
+    └── body
+        ├── h1
+        ├── p
+        └── ul
+            ├── li
+            ├── li
+            └── li
+Element node represents an HTML element.
+Attribute node represents an attribute of an HTML element.
+Text node represents the text content of an HTML element.
+
+Accessing DOM Elements we can use following methods:
+1. getElementById()- Its selects the element by its ID.
+2. getElementsByClassName()-It selects the element by their class name.
+3. getElementsByTagName()=-It selects the element by their tag name.
+4. querySelector()-It selects the first element that matches a specified CSS selector.
+5. querySelectorAll()-It selects all elements that match a specified CSS selector.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1> This is a DOM page</h1>
+        <p>This paragraph is inside the main div.</p>
+    </div>
+    <script>
+        // Accessing element by ID
+        let mainDiv = document.getElementById("main");
+        mainDiv.getElementsByTagName("div")[0].style.backgroundColor = "lightblue";
+    </script>
+       <button onclick="changeContent()">Click me to change content</button>
+    <script>
+        function changeContent() {
+            document.getElementsByTagName("h1")[0].innerHTML = "Content Changed!";
+            mainDiv.style.backgroundColor = "lightgreen";
+            mainDiv.style.padding = "20px";
+            mainDiv.style.border = "2px solid black";
+        }
+    </script> 
+       
+</body>
+</html>
+
+<!-- FOLLOWING ARE THE STEPS FOR PERFORMING ABOVE DEMO based on DOM Manipulation -->
+1. Access the DOM element using `document.getElementById("main")`.
+2. Change the text content of the paragraph using `textContent`.
+3. Modify the CSS properties of the element using `style.propertyName`.
+<!--  We can use following for changing attributes  -->
+  <!-- .setAttribute() for setting attributes -->
+    <!-- .getAttribute() for getting attributes -->
+    <!-- .removeAttribute() for removing attributes -->
+    <!-- We can use Changing CSS styles -->
+    <!-- element.style.propertyName = "value";  Changes inline styles -->
+    <!-- element.classList.add("className");  Adds a class -->
+     <!-- element.classList.remove("className");  Removes a class -->
+<!-- element.classList.toggle("className");  Toggles a class on/off -->
