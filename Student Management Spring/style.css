@@ -1,0 +1,101 @@
+
+ /*  Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafaf8;
+    color: #333333;
+}
+
+/* Header Section */
+header {
+    background-color: #6eb2d4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+
+header .logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    border-radius: 80%;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Navbar Menu */
+.menu {
+    margin-left: auto;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #004d66;
+}
+
+/*  Page Sections  */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #006699;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Profile Card Style */
+.profile-box {
+    width: 450px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.profile-box p {
+    font-size: 18px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer  */
+footer {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spring Flower School - Student Management</title>
+    
+</head>
+<body>
+    <header class="header">
+       <img src="images.jpeg" alt="School Logo" class="logo">
+           <h1>Spring Flower School</h1>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to Student Management System</h2>
+        <p>This application helps students access their profile and academic information.</p>
+        <button onclick="showProfile()">Student Profile</button>
+    </section>
+
+    <!-- Student Profile Section -->
+    <section id="studentProfile" class="profile hidden">
+        <h2>Student Profile</h2>
+        <p><strong>Name:</strong> Namit Jain</p>
+        <p><strong>Class:</strong> 12th Grade</p>
+        <p><strong>Roll Number:</strong> 25</p>
+        <p><strong>Email:</strong> namit.jain@gmail.com</p>
+        <p><strong>Phone:</strong> 8778977787</p>
+
+    </section>
+
+    <script>
+        function showProfile() {
+            document.getElementById("studentProfile").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
